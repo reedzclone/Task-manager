@@ -1,0 +1,194 @@
+:root {
+  --bg: #0a2472;
+  --text: #4895ef;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 4rem;
+  background-image:  url("assets/bg-image.jpg") ;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  padding: 3rem 1rem;
+  background-color: var(--bg);
+  border-radius: 2rem;
+}
+
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.input-task {
+  display: flex;
+  width: 93%;
+  font-size: 1.5rem;
+  margin-left: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+input{
+  width: 74%;
+  height: 3.0rem;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  
+}
+
+.task-btn {
+  margin: 0;
+  padding: 12px 25px;
+  margin-left: 0px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: #147D1F;
+  cursor: pointer;
+}
+
+.task-btn:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
+
+
+main {
+  max-width: 800px;
+  width: 100%;
+  margin-left: 2rem;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: var(--text);
+
+}
+
+thead .serial{
+  text-align: center;
+}
+
+thead .task {
+  text-align: start;
+}
+
+thead .action {
+  text-align: center;
+}
+
+th, td{
+  padding: 1rem;
+  font-weight: 600;
+}
+
+th {
+  color: #fff;
+}
+
+
+
+td {
+   /* margin-top: 1.5rem; */
+  color: var(--text);
+}
+
+
+.serial-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-detail {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.action-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.update-btn {
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  border: none;
+  background-color: #ffafcc;
+  margin-right: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.delete-btn {
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: #ed2d2d;
+}
+
+.update-btn:hover {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.delete-btn:hover {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+
+
+
+
